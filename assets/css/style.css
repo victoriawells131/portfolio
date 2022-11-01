@@ -70,6 +70,26 @@ img.resize {
 .tabcontent {
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
+.examplepics {
+    border: solid black 1px;
+    width: 598px;
+    box-shadow: 4px 7px 5px rgb(79, 85, 92);
+    margin-right: 35px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.tinypics {
+    margin-bottom: 15px;
+    border: solid black 1px;
+    width: 280px;
+    box-shadow: 4px 7px 5px rgb(79, 85, 92);
+}
+
+.smfloatleft {
+    float: left;
+    width: 280px;
+}
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
