@@ -205,7 +205,7 @@ body {
 }
 
 .smfloatleft {
-    float: left;
+    float: right;
     width: 280px;
 }
 
