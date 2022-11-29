@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
             <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
         </div>
 
-        <!-- Begin Home Section -->
+        <!-- Begin Home Section --
         <div id="Home" class="tabcontent">
               <h2>Profile</h2>
               <img class="img-style-1" src="assets/images/victoriawells.jpg">
@@ -43,7 +43,7 @@
               <br>&nbsp;
               <br>&nbsp;
 </div>
- <!-- Begin Home Section -->
+ <!-- Begin Home Section --
  <div id="Resume" class="tabcontent">
     <h2>Resume</h2>
     <p> Download my resume in either <a href="assets/resources/Victoria Wells Resume 3.docx">Microsoft Word</a> or <a href="assets/resources/Victoria Wells Resume 4.pdf">PDF</a> format.</p></p>
@@ -89,7 +89,7 @@ Bachelor of Science in Web Design and Development
 </ul>
 </p>
 </div>
-<!-- Begin Skills Section -->
+<!-- Begin Skills Section --
 <div id="Skills" class="tabcontent">
     <h2>Skills</h2>
     <ul>
@@ -133,4 +133,211 @@ Victoria Wells.
 <script type="text/javascript" src="assets/js/portfolio.js">
 </script>
 </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">PROFILE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">PROFILE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#skills" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">SKILLS</a>
+          <a href="#accomplishments" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ACCOMPLISHMENTS</a>
+          <a href="workexamples.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="openRedirect('workexamples.html')">WORK EXAMPLES</a>
+          <a href="#coverletter" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">COVER LETTER</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <h1>Victoria Wells</h2>
+            <h2></h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT ME</h2>
+            <p class="w3-margin-top-2"> 
+              I'm a third year student pursuing a degree in Web Design and Development at The University of Arkansas at Little Rock.
+              I'm dedicated to learning from others and growing through experience as time progresses, yet will not withhold from acting as a leader.
+               I carry the important foundations of communication and am able to adapt to any group culture or environment.
+               I am passoniate about working within the creative industry and IT field. 
+               I have an interest in front end devlopment and graphic design which I plan to pursue in the future.
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber"></h3>
+              <div class="">
+                
+    <p> Download my resume in either <a href="assets/resources/Victoria Wells Resume 3.docx">Microsoft Word</a> or <a href="assets/resources/Victoria Wells Resume 4.pdf">PDF</a> format.</p></p>
+    <h2>Victoria Wells</h2>
+    <h3>12808 Arthur Lane Little Rock, AR 72211</h3>
+    <h3>vwells@ualr.edu</h3>
+    <h3>(501)-412-5800 </h3> 
+    <h3>Profile</h3>
+    <p>Unique and innovative student ready to seize any opportunity. 
+        Dedicated to learning from others and growing through experience as time progresses,
+         yet will not withhold from acting as a leader. 
+         Carries the important foundations of communication and is able to adapt to any group culture or environment.
+    </p> 
+    <h3>Experience</h3>
+    <p>
+    
+Beauty Advisor, Ulta Beauty — 2021-2022
+<ul>
+<li>Extreme growth in customer service.</li>
+<li>Great knowledge of consumer goods and how to sell them.</li>
+<li>Work in a fast-paced environment and learning from mistakes along the way.</li>
+</ul>
+Division Internship at Arvest IT & Automation Department — 2022
+<ul>
+<li>Shadowing software engineers and QA testers in a corporate environment while learning how to automate programs.</li>
+<li>Implemented software engineering and testing knowledge.</li>
+</ul>
+    </p>
+
+<h3>Clubs</h3>
+<ul>
+<li>Sales Team</li>
+<li>Virtual Social Justice Movie Club</li>
+</ul>
+</p>
+</div>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>Bachelor of Science in Web Design and Development</h4>
+                <p>University of Arkansas at Little Rock</p>
+                <p>August 2020 - May 2024 </p>
+                <h4>Little Rock Central Highschool</h4>
+                <p>August 2016 - May 2020 </p>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div id="skills" class="w3-container w3-margin-top-2 w3-cursive">
+            
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Project Management</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe After Effects</li>
+        <li>Python</li>
+        <li>UiPath</li>
+        <li>Microsoft Word</li>
+        <li>Microsoft Excel</li>
+        <li>Microsoft Powerpoint</li>
+        <li>Microsoft Outlook</li>
+    </ul>
+
+          
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Victoria Wells</p>
+              <p>12808 Arthur Lane,72211 Little Rock, AR</p>
+              <p>501-412-5800</p>
+              <p>victoria.wells317@gmail.com</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2021 - John Doe</p>
+           <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
 </html>
